@@ -1,0 +1,50 @@
+{ "heroes": [{
+    "name": "Omar, Gunsliner Extrodinare",
+    "specialty": "Ranged Weaponry",
+    "race": "Okin",
+    "description": "This Owl-folk, like the rest of his kind we see are exiles from the north.  Normally wandering through the wasteland alone, he rides a mechanical drifiting from place to place. Standing no more than five feat tall, wearing a raggid poncho, and wide brimed sombero, he may not seem like he could take anyone on in a fight, with or with out guns, but his reputation indcates otherwise.",
+    "blurb":"We have all seen him riding through out the waste on that mechanical horse of his. Omar is an Okin Exile with a heart of gold, and the reflexes of a true gunslinger!",
+    "featured":"true",
+    "id":"1"
+  }, {
+    "name": "R.O.B.B",
+    "specialty": "Ranged Weaponry",
+    "race": "Android",
+    "description": "Like most andriods, R.O.B.B has the personality of drying paint. In addition if the stories are to believed he was once was a common bandit stealing things for profit, but it seems like with his latest updates he has had a great change in logic.  In a gunfight he might miss his target, but with his metallic body, and energy shooting revolver, he can afford to take a hit or two",
+    "blurb": "Mysterious bandana sporting android with a checkered past. He does not have legs, but one wheel. Adding more mysteries to him, just how does he get up a flight of stairs?",
+    "featured":"false",
+    "id":"2"
+  }, {
+    "name": "Koryk, the Friendliest Bear",
+    "specialty": "Melee Combat",
+    "race": "Cosmo-Bear",
+    "description": "This bear-folk and the rest of his kind are straight out of Old-World cartoons, and propaganda. Koryk speaks with a thick Russian accent, all while managing to that ridicuouls hat on his head. I guess we finally know what happened to those bears that dissapeared centuries ago...  Wielding a Great Sword empored some strange crystal technology he will take on all comers in a fight, no matter the odds. While not fighting a bunch of opponents he is a very freindly bear, but has rage issues while fighting.",
+    "blurb": "He is the Friendliest bear around these parts, but also quite possibly the deadliest. Also hard to understand at times.",
+    "featured":"no",
+    "id":"3"
+  }, {
+    "name": "Pascal, the Raccoon Gal",
+    "specialty": "item recovery",
+    "race": "unkown",
+    "description": "This gal is something else, quite litterally.  Her kind are not native to region, even this continent, but here she is.  Pascal is a scavanger with a penchant for mischeif always picking up parts, and scraps that might come in handy later, for practical uses, or pranks. While she wanders around the region on her quest for stuff, she like to lend a hand to anyone in need. Often using her wits, and array impossible gadgets she can get in and out of places with ease.",
+    "blurb": "A Raccoon Gal with magic hands, crazy gadgets, and accent of an Old-World 'Southern Bell'",
+    "featured": "false",
+    "id":"4"
+  }, {
+    "name": "Nix",
+    "specialty": "Technology",
+    "race": "Okin",
+    "description": "Another Okin Exile, however unlike Omar, his area of expertise involves anything and everything from old computer consoles, to high tech drones.  Often found exploring old factories, and research facilities left behind he seeks to expand his knowledge in order to build drones, and other things to help out the citizens of the waste",
+    "blurb": "A mechanical genius, whose face is half machine. It is said that he did it himself after his exile left horrible injured",
+    "featured":"false",
+    "id":"5"
+  }, {
+    "name": "Ted",
+    "specialty": "Travel",
+    "race": "Human",
+    "description": "Ted, also known as the 'Wagoneer', is constatly on the move traveling from town to town with supplies, or refugees from destroyed villages. A kind hearted man with the patience of saint, he stops to try and help anyone he can.",
+    "blurb": "Lone man traveling the waste in his wagon. Often reffered to as Saint Ted, saint of travel.",
+    "featured":"false.",
+    "id":"6"
+  }
+  ]}

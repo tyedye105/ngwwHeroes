@@ -5,7 +5,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { HeroService } from '../hero.service';
 
 @Component({
-  selector: 'app-hero-list',
+  selector: 'hero-list',
   templateUrl: './hero-list.component.html',
   styleUrls: ['./hero-list.component.css'],
   providers: [HeroService]
@@ -13,6 +13,7 @@ import { HeroService } from '../hero.service';
 
 export class HeroListComponent implements OnInit {
     heroes: FirebaseListObservable<any[]>;
+    currentRoute: string = this.router.url;
 
 
 

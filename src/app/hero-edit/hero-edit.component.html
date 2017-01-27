@@ -1,0 +1,43 @@
+<h1>Edit Hero Details</h1>
+<div>
+  <div class="form-group">
+    <label>Hero Name</label>
+    <br>
+    <input class="form-control" [(ngModel)]="selectedHero.name">
+  </div>
+  <div class="form-group">
+    <label>Hero Race</label>
+    <br>
+    <input class="form-control" [(ngModel)]="selectedHero.race">
+  </div>
+  <div class="form-group">
+    <label>Select Specialty</label>
+    <br>
+    <select [(ngModel)]="selectedHero.specialty">
+      <option value="Melee Combat">Melee Combat</option>
+      <option value="Ranged Weaponry">Ranged Weaponry</option>
+      <option value="Item Recovery">Item Recovery</option>
+      <option value="Technology">Technology</option>
+      <option value="Travel">Travel</option>
+      <option value="Support/Healing">Support/Healing</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Hero Description</label>
+    <br>
+    <textarea class="form-control" [(ngModel)]="selectedHero.description"></textarea>
+  </div>
+  <div class="form-group">
+    <label>A short description of the hero</label>
+    <br>
+    <input class="form-control" [(ngModel)]="selectedHero.blurb">
+  </div>
+  <div class="form-group">
+    <label>Is a featured Hero?</label>
+    <br>
+    <select [(ngModel)]="selectedHero.featured">
+      <option value="true">true</option>
+      <option value="false">false</option>
+    </select>
+  </div>
+  <button (click)="beginUpdatingHero(selectedHero)">Update</button>

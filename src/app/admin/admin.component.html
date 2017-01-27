@@ -4,12 +4,12 @@
     <div class="form-group">
       <label>Hero Name</label>
       <br>
-      <input #newName>
+      <input class="form-control" #newName>
     </div>
     <div class="form-group">
       <label>Hero Race</label>
       <br>
-      <input #newRace>
+      <input class="form-control" #newRace>
     </div>
     <div class="form-group">
       <label>Select Specialty</label>
@@ -17,7 +17,7 @@
       <select #newSpecialty>
         <option value="Melee Combat">Melee Combat</option>
         <option value="Ranged Weaponry">Ranged Weaponry</option>
-        <option value="Item Recover">Item Recover</option>
+        <option value="Item Recovery">Item Recovery</option>
         <option value="Technology ">Technology</option>
         <option value="Travel">Travel</option>
         <option value="Support/Healing">Support/Healing</option>
@@ -26,13 +26,16 @@
     <div class="form-group">
       <label>Hero Description</label>
       <br>
-      <textarea #newDescription></textarea>
+      <textarea class="form-control" #newDescription></textarea>
     </div>
     <div class="form-group">
       <label>A short description of the hero</label>
       <br>
-      <input #newBlurb>
+      <input class="form-control" #newBlurb>
     </div>
     <button (click)="submitForm(newName.value, newRace.value, newSpecialty.value, newDescription.value, newBlurb.value)">Add Hero</button>
   </div>
 </div>
+<hr>
+  <h1> Modify Hero Details of Current Roster</h1>
+  <hero-list></hero-list>

@@ -1,9 +1,17 @@
-<h1>Wild World Heroes Roster</h1>
+<h1 *ngIf="currentRoute === '/hero-list'">Wild World Heroes Roster</h1>
 
 <div id="hero-display" *ngFor="let hero of heroes | async">
   <div class="hero-display">
     <h3 class="hero-h3"(click)="goToDetailPage(hero)">Name: {{hero.name}}</h3>
     <h3 class="hero-h3">Specialty: {{hero.specialty}}</h3>
-    <h3 class="hero-h3">Short Description: {{hero.blurb}}</h3>
+    <h3 class="hero-h3">Short Description:</h3>
+    <p class="hero-desc">{{hero.blurb}}</p>
+    <div *ngIf="currentRoute === '/admin'">
+    <h3 class="hero-h3">Description:</h3>
+    <p class="hero-desc">{{hero.description}}</p>
+    <h3 class="hero-h3">Is a featured hero? {{hero.featured}}</h3>
+    <hr>
+    <hero-edit [selectedHero]="hero"></hero-edit>
+    </div>
   </div>
 </div>

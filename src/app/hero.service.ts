@@ -18,4 +18,14 @@ export class HeroService {
  getHeroes() {
    return this.heroes;
  }
+
+ updateHero(localUpdatedHero){
+   var heroEntryInFirebase = this.getHeroById(localUpdatedHero.$key);
+   heroEntryInFirebase.update({name: localUpdatedHero.name,
+                               race: localUpdatedHero.race,
+                               specialty: localUpdatedHero.specialty,
+                               description: localUpdatedHero.description,
+                               blurb: localUpdatedHero.blurb,
+                               featured: localUpdatedHero.featured});
+ }
 }

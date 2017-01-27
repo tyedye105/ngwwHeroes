@@ -1,7 +1,9 @@
 <h1>Wild World Heroes Roster</h1>
 
-<div id="hero-display" *ngFor="let hero of heroes | async" class="well">
-  <h3 (click)="goToDetailPage(hero)">{{hero.name}}</h3>
-  <h3>{{hero.specialty}}</h3>
-  <h3>{{hero.race}}</h3>
+<div id="hero-display" *ngFor="let hero of heroes | async" class="panel panel-default">
+  <div class="panel-body">
+    <h3 class="panel-display" (click)="goToDetailPage(hero)">{{hero.name}}</h3>
+    <h3 class="panel-display" >{{hero.specialty}}</h3>
+    <h3 class="panel-display" >{{hero.race}}</h3>
+  </div>
 </div>

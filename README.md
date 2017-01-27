@@ -23,7 +23,7 @@ Wild World Heroes, is a website were the user can create and manage rosters of h
    export var masterFirebaseConfig = {  
 
     apiKey: "xxxx",  
-    
+
     authDomain: "xxxx.firebaseapp.com",  
 
     databaseURL: "https://xxxx.firebaseio.com",  
@@ -33,7 +33,7 @@ Wild World Heroes, is a website were the user can create and manage rosters of h
     messagingSenderId: "xxxx"  
 
   };  
-  
+
 
  *Then input the information you got from Firebase into the api-keys.ts
  * IMPORTANT ##MAKE SURE YOU ADD api-keys.ts TO YOUR .gitingore file!

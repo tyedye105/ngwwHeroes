@@ -20,13 +20,20 @@ Wild World Heroes, is a website were the user can create and manage rosters of h
    * in your src/tsconfig.json add "types": [ "firebase" ] into the "compilerOptions"
    * create a api-keys.ts with the following code:
 
-   export var masterFirebaseConfig = {
-    apiKey: "xxxx",
-    authDomain: "xxxx.firebaseapp.com",
-    databaseURL: "https://xxxx.firebaseio.com",
-    storageBucket: "xxxx.appspot.com",
-    messagingSenderId: "xxxx"
-  };
+   export var masterFirebaseConfig = {  
+
+    apiKey: "xxxx",  
+    
+    authDomain: "xxxx.firebaseapp.com",  
+
+    databaseURL: "https://xxxx.firebaseio.com",  
+
+    storageBucket: "xxxx.appspot.com",  
+
+    messagingSenderId: "xxxx"  
+
+  };  
+  
 
  *Then input the information you got from Firebase into the api-keys.ts
  * IMPORTANT ##MAKE SURE YOU ADD api-keys.ts TO YOUR .gitingore file!

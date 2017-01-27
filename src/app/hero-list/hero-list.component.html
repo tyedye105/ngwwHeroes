@@ -1,3 +1,7 @@
-<p>
-  hero-list works!
-</p>
+<h1>Wild World Heroes Roster</h1>
+
+<div id="hero-display" *ngFor="let hero of heroes" class="well">
+  <h3>{{hero.name}}</h3>
+  <h3>{{hero.specialty}}</h3>
+  <h3>{{hero.race}}</h3>
+</div>

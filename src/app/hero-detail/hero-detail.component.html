@@ -1,3 +1,13 @@
-<p>
-  hero-detail works!
-</p>
+<div class="well">
+    <h2 (click)="goToDetailPage(hero)">Name: {{(heroToDisplay | async)?.name}}</h2>
+    <h3 class="hero-h3">Specialty: {{(heroToDisplay | async)?.specialty}}</h3>
+    <h3 class="hero-h3">Race:{{(heroToDisplay | async)?.race}}</h3>
+    <h3 class="hero-h3">Description:</h3>
+    <p>
+      {{(heroToDisplay | async)?.description}}
+    </p>
+    <h3 class="hero-h3">A short description:</h3>
+    <p>
+      {{(heroToDisplay | async)?.blurb}}
+    </p>
+</div>

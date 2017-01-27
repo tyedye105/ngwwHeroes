@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hero-list',
   templateUrl: './hero-list.component.html',
   styleUrls: ['./hero-list.component.css']
 })
+
 export class HeroListComponent implements OnInit {
   heroes: Hero[] = [
     new Hero("Omar", "Ranged Weapons", "Okin", "desciption goes here", "this is the blurb for the featured section", 1),
@@ -15,9 +17,12 @@ export class HeroListComponent implements OnInit {
   ];
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+  goToDetailPage(clickedHero: Hero) {
+    this.router.navigate(['heroes', clickedHero.id])
   }
 
 }

@@ -28,4 +28,9 @@ export class HeroService {
                                blurb: localUpdatedHero.blurb,
                                featured: localUpdatedHero.featured});
  }
+
+ deleteHero(localHeroToDelete) {
+   var heroEntryInFirebase = this.getHeroById(localHeroToDelete.$key);
+   heroEntryInFirebase.remove();
+ }
 }

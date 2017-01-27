@@ -1,6 +1,19 @@
-<h1 *ngIf="currentRoute === '/hero-list'">Wild World Heroes Roster</h1>
+<div *ngIf="currentRoute === '/heroes'">
 
-<div id="hero-display" *ngFor="let hero of heroes | async">
+  <h1>Wild World Heroes Roster</h1>
+  <label>Filter heroes by specialty</label>
+  <select (change)="onChange($event.target.value)">
+    <option value="Melee Combat">Melee Combat</option>
+    <option value="Ranged Weaponry">Ranged Weaponry</option>
+    <option value="Item Recovery">Item Recovery</option>
+    <option value="Technology ">Technology</option>
+    <option value="Travel">Travel</option>
+    <option value="Support/Healing">Support/Healing</option>
+    <option value="all" selected="">All</option>
+  </select>
+
+</div>
+<div id="hero-display" *ngFor="let hero of heroes | async | specialtyFilter: filterBySpecialty">
   <div class="hero-display">
     <h3 class="hero-h3"(click)="goToDetailPage(hero)">Name: {{hero.name}}</h3>
     <h3 class="hero-h3">Specialty: {{hero.specialty}}</h3>

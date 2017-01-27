@@ -9,7 +9,9 @@ export class HeroService {
   constructor(private angularFire: AngularFire) {
   this.heroes = angularFire.database.list('heroes');
  }
-
+ addHero(newHero: Hero) {
+   this.heroes.push(newHero);
+ }
  getHeroes() {
    return this.heroes;
  }

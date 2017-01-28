@@ -16,6 +16,7 @@ export class HeroListComponent implements OnInit {
     heroes: FirebaseListObservable<any[]>;
     currentRoute: string = this.router.url;
     filterBySpecialty: string = "all";
+    filterByFeatured: boolean = true;
 
   constructor(private router: Router, private heroService: HeroService) { }
 

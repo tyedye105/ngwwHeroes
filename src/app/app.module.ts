@@ -13,6 +13,7 @@ import { masterFirebaseConfig} from './api-keys';
 import { AdminComponent } from './admin/admin.component';
 import { HeroEditComponent } from './hero-edit/hero-edit.component';
 import { SpecialtyPipe } from './specialty.pipe';
+import { FilterFeaturedPipe } from './filter-featured.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     HeroDetailComponent,
     AdminComponent,
     HeroEditComponent,
-    SpecialtyPipe
+    SpecialtyPipe,
+    FilterFeaturedPipe
   ],
   imports: [
     BrowserModule,

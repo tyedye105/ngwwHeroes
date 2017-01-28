@@ -5,7 +5,7 @@
 
 ## Known issues
 
-Users can submit blank form, however it is easy enough to edit the blank entries so that they have meaningful content.
+The featured heroes section does not show featured heroes. Despite my best attempts my pipe to return heroes by their featured property resulted in null being returned as my console log scream could get the length of null...
 
 ## Description
 
@@ -41,7 +41,7 @@ Wild World Heroes, is a website were the user can create and manage rosters of h
 
  ###Installation
 
-* Clone this repo: https://github.com/tyedye105/jsmealtracker
+* Clone this repo: https://github.com/tyedye105/ngwwHeroes
 * In the terminal run $ npm install
 * In the terminal run $ bower install
 * In The terminal run ng serve
